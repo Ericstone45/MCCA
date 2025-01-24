@@ -161,6 +161,24 @@
             100% { background-image: url('MCCA/MCCA\ 5.jpg'); }
         }
 
+
+        /* Responsive Styles */
+@media (max-width: 768px) {
+    .image-slider {
+        height: 400px; /* Reduce height for smaller screens */
+        background-size: contain; /* Prevent cropping of images */
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-slider {
+        height: 300px; /* Further reduce height for very small screens */
+        background-size: contain; /* Ensure full image is visible */
+        background-repeat: no-repeat; /* Avoid repeating the background */
+    }
+}
+
         /* Content Section */
         .content {
             width: 100%;
@@ -239,11 +257,13 @@
                 width: 100%;
                 margin-bottom: 20px;
             }
-
+            
             .left-content-container {
                 width: 90%;
                 margin-right: 0;
             }
+           
+           
         }
 
 
@@ -306,6 +326,30 @@
             opacity: 0.8;
             
         }
+
+
+        /* Responsive styles */
+@media (max-width: 768px) {
+    .slider {
+        width: 95%; /* Make the slider take more space on smaller screens */
+        height: 250px; /* Reduce height for smaller screens */
+    }
+
+    .slides div {
+        height: 100%; /* Ensure individual slides scale properly */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        width: 100%; /* Full width on very small screens */
+        height: 300px; /* Further reduce height for very small screens */
+    }
+
+    .slides img {
+        object-fit: contain; /* Adjust object-fit to avoid cropping on small screens */
+    }
+}
 
 
 
@@ -372,6 +416,7 @@
             .content-container {
                 width: 90%;
             }
+           
         }
 
 
@@ -833,14 +878,14 @@
            
                 
                 <section class="kaka">
-                    <h2>Projects</h2>
+                    <h2></h2>
                     <div class="slider">
                         <div class="slides">
-                            <div class="slide1" onclick="window.location.href='page1.html'"><img src="MCCA/MCCA 5.jpg" alt="Image 1"></div>
-                            <div class="slide2" onclick="window.location.href='page2.html'"><img src="MCCA/MCCA 18.jpg" alt="Image 2"></div>
-                            <div class="slide3" onclick="window.location.href='page3.html'"><img src="MCCA/MCCA 24.jpg" alt="Image 3"></div>
-                            <div class="slide4" onclick="window.location.href='page4.html'"><img src="MCCA/MCCA 21.jpg" alt="Image 4"></div>
-                            <div class="slide5" onclick="window.location.href='page5.html'"><img src="MCCA/MCCA 26.jpg" alt="Image 5"></div>
+                            <div class="slide1" onclick="window.location.href='rusororo.html'"><img src="MCCA/MCCA 5.jpg" alt="Image 1"></div>
+                            <div class="slide2" onclick="window.location.href='Project-two.html'"><img src="MCCA/MCCA 18.jpg" alt="Image 2"></div>
+                            <div class="slide3" onclick="window.location.href='rusororo.html'"><img src="MCCA/MCCA 11.jpg" alt="Image 3"></div>
+                            <div class="slide4" onclick="window.location.href='rusororo.html'"><img src="MCCA/MCCA 15.jpg" alt="Image 4"></div>
+                            <div class="slide5" onclick="window.location.href='rusororo.html'"><img src="MCCA/MCCA 26.jpg" alt="Image 5"></div>
                         </div>
                     </div> 
                 </section>
@@ -848,7 +893,7 @@
             
 
             <section>
-                <h2>Our Team</h2>
+               
                 <div class="section">
                     <div class="image-container">
                         <a href="rusororo.html" target="_blank">
